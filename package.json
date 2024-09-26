@@ -1,0 +1,25 @@
+{
+  "name": "order-controller-server",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "lint": "biome check --write src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@prisma/client": "^5.20.0",
+    "fastify": "^5.0.0",
+    "fastify-sse-v2": "^4.1.0",
+    "fastify-type-provider-zod": "^3.0.0",
+    "prisma": "^5.20.0",
+    "zod": "^3.23.8"
+  }
+}
